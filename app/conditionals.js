@@ -1,7 +1,7 @@
 //1. Given two numbers, write a function that will return  the larger number
 
 function largerNum(num1, num2) {
-    // you code here
+    return Math.max(num1,num2)
 
 }
 
@@ -14,7 +14,21 @@ function largerNum(num1, num2) {
 // output: "F"
 
 function testGrader(score, possible) {
-
+   
+    if (score / possible >= .9) {
+        return ('A')
+    }
+    else if (score / possible >= .8) {
+        return ('B')
+    }
+    else if (score / possible >= .7) {
+        return ('C')
+    }
+    else if (score / possible >= .6) {
+        return ('D')
+    }
+    
+    else { return ('F') }
 }
 
 
@@ -29,7 +43,21 @@ function testGrader(score, possible) {
 //Make sure your ranges are inclusive
 
 function timeOfDayGreeting(hour) {
-    // you code below
+    if (hour <= 4) {
+        return ('Good Night')
+    }
+    else if (hour <= 11) {
+        return ('Good Morning')
+    }
+    else if (hour <= 17) {
+        return ('Good Afternoon')
+    }
+    else if (hour <= 21){
+        return ('Good Evening')
+    }
+    else if (hour <= 24) {
+        return('Good Night')
+    }
 
 }
 
